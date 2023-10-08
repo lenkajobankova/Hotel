@@ -8,6 +8,20 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        fillBookings reservations = getFillBookings();
+
+        printBookings(reservations.bookingList());
+
+        getFirstHolidayBookings(reservations.bookingList(),8);
+
+        System.out.println(reservations.bookingManager().getBooking(0).getBookingLength());
+
+        System.out.println(reservations.bookingManager().getBooking(0).getPrice());
+
+        printGuestStatistics(reservations.bookingList());
+    }
+
+    private static fillBookings getFillBookings() {
         List<Booking> bookingList = new ArrayList<>();
         BookingManager bookingManager = new BookingManager(bookingList);
 
@@ -47,16 +61,11 @@ public class Main {
                 true);
 
         bookingManager.addBooking(reservation3);
+        fillBookings reservations = new fillBookings(bookingList, bookingManager);
+        return reservations;
+    }
 
-        printBookings(bookingList);
-
-        getFirstHolidayBookings(bookingList,8);
-
-        System.out.println(bookingManager.getBooking(0).getBookingLength());
-
-        System.out.println(bookingManager.getBooking(0).getPrice());
-
-        printGuestStatistics(bookingList);
+    private record fillBookings(List<Booking> bookingList, BookingManager bookingManager) {
     }
 
     private static void printGuestStatistics(List<Booking> bookingList) {

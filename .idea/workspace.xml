@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84f9beb4-c89d-447b-a637-882860bb6408" name="Changes" comment="Přidána metoda fillBookings&#10;&#10;Do třídy Main je nově vytvořena metoda fillBookings obsahující rezervace.">
+    <list default="true" id="84f9beb4-c89d-447b-a637-882860bb6408" name="Changes" comment="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/BookingManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/boruvka/IdeaProjects/Hotel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/boruvka/IdeaProjects/Hotel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -79,12 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696760475068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu.">
+      <option name="closed" value="true" />
+      <created>1697118513717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697118513717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Vypracován úkol třetí lekce&#10;&#10;Kód projektu hotel doplněn o úkoly třetí lekce, přidána nová třída BookingManager." />
     <MESSAGE value="Přidána metoda fillBookings&#10;&#10;Do třídy Main je nově vytvořena metoda fillBookings obsahující rezervace." />
-    <option name="LAST_COMMIT_MESSAGE" value="Přidána metoda fillBookings&#10;&#10;Do třídy Main je nově vytvořena metoda fillBookings obsahující rezervace." />
+    <MESSAGE value="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu." />
   </component>
 </project>

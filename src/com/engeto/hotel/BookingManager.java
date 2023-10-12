@@ -5,7 +5,6 @@ import java.util.List;
 
 public class BookingManager {
     private List<Booking> bookingList = new ArrayList<>();
-    Booking booking;
 
     //region Konstruktory
 

@@ -49,8 +49,8 @@ public class Main {
         int numOfBookingsJune = 10;
         for (int i = 0; i < numOfBookingsJune; i++){
             Booking booking = new Booking(karolina, room2,
-                    LocalDate.of(2023,8,1).plusDays(i).plusDays(1*i),
-                    LocalDate.of(2023,8,2).plusDays(i).plusDays(1*i),
+                    LocalDate.of(2023,8,1).plusDays(i+i),
+                    LocalDate.of(2023,8,2).plusDays(i+i),
                     true);
             bookingManager.addBooking(booking);
         }
@@ -69,38 +69,41 @@ public class Main {
     }
 
     private static void printGuestStatistics(List<Booking> bookingList) {
-        int i = 0, j = 0, k = 0;
+        int oneGuest = 0, twoGuests = 0, moreThanTwoGuests = 0;
         for (Booking booking : bookingList){
             int numberOfGuests = booking.getNumberOfBuests();
 
             if (numberOfGuests == 1){
-                i++;
+                oneGuest++;
             }
             else if(numberOfGuests == 2){
-                j++;
+                twoGuests++;
             }
             else{
-                k++;
+                moreThanTwoGuests++;
             }
         }
-        System.out.println("Počet rezervací s jedním hostem: "+i);
-        System.out.println("Počet rezervací se dvěma hosty: "+j);
-        System.out.println("Počet rezervací s více než dvěma hosty: "+k);
+        System.out.println("Počet rezervací s jedním hostem: "+oneGuest);
+        System.out.println("Počet rezervací se dvěma hosty: "+twoGuests);
+        System.out.println("Počet rezervací s více než dvěma hosty: "+moreThanTwoGuests);
     }
 
 
     private static void getFirstHolidayBookings(List<Booking> bookingList, int numOfHolidayBookings) {
-        int j = 1;
-        System.out.println("Výpis prvních "+numOfHolidayBookings+" rekreačních pobytů");
-        for (int i = 0; i < numOfHolidayBookings; i++){
-            if (bookingList.get(j).isHoliday()){
-                System.out.println(j+": "+ bookingList.get(j).getDateFrom()+" až "+ bookingList.get(j).getDateTo()+": "+
-                                bookingList.get(j).getGuest().getDescription()+"["+ bookingList.get(j).getNumberOfBuests()+", "+
-                                bookingList.get(j).getRoom().isSeaYN()+"] za "+ bookingList.get(j).getRoom().getPricePerNight()+" Kč"
-                        );
-            j++;
+        if (numOfHolidayBookings<=bookingList.size()){
+            int index = 1;
+            System.out.println("Výpis prvních "+numOfHolidayBookings+" rekreačních pobytů");
+            for (int i = 0; i < numOfHolidayBookings; i++){
+                if (bookingList.get(index).isHoliday()) {
+                    System.out.println(index + ": " + bookingList.get(index).getDateFrom() + " až " + bookingList.get(index).getDateTo() + ": " +
+                            bookingList.get(index).getGuest().getDescription() + "[" + bookingList.get(index).getNumberOfBuests() + ", " +
+                            bookingList.get(index).getRoom().isSeaYN() + "] za " + bookingList.get(index).getRoom().getPricePerNight() + " Kč"
+                    );
+                    index++;
+                }
             }
         }
+        else System.out.println("Tolik rekreačních rezervací není zadáno!");
     }
 
     private static void printBookings(List<Booking> bookingList) {

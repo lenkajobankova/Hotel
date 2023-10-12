@@ -33,10 +33,12 @@ public class Main {
         bookingManager.addBooking(reservation2);
 
         int numOfBookingsJune = 10;
+        int dateIndex;
         for (int i = 0; i < numOfBookingsJune; i++){
+            dateIndex = 2*i;
             Booking booking = new Booking(karolina, room2,
-                    LocalDate.of(2023,8,1).plusDays(i+i),
-                    LocalDate.of(2023,8,2).plusDays(i+i),
+                    LocalDate.of(2023,8,1).plusDays(dateIndex),
+                    LocalDate.of(2023,8,2).plusDays(dateIndex),
                     true);
             bookingManager.addBooking(booking);
         }
@@ -50,7 +52,7 @@ public class Main {
 
         printBookings(bookingList);
 
-        getFirstHolidayBookings(bookingList,8);
+        getFirstHolidayBookings(bookingList,10);
 
         System.out.println(bookingManager.getBooking(0).getBookingLength());
 

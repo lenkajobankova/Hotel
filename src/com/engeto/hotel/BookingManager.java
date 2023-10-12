@@ -29,11 +29,13 @@ public class BookingManager {
         bookingList.clear();
     }
     public int getNumberOfWorkingBookings(){
-        int numOfWorkingBookings = 0;
-        if (!booking.isHoliday()){
-            numOfWorkingBookings += 1;
+        int result = 0;
+        for (Booking booking : bookingList){
+            if (!booking.isHoliday()){
+                result++;
+            }
         }
-        return numOfWorkingBookings;
+        return result;
     }
     public double getAverageGuests(){
         int numOfGuests = 0;

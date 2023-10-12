@@ -52,7 +52,8 @@ public class Main {
 
         printBookings(bookingList);
 
-        getFirstHolidayBookings(bookingList,10);
+        int numOfHolidyBookings = 8;
+        getFirstHolidayBookings(bookingList,numOfHolidyBookings);
 
         System.out.println(bookingManager.getBooking(0).getBookingLength());
 

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84f9beb4-c89d-447b-a637-882860bb6408" name="Changes" comment="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="84f9beb4-c89d-447b-a637-882860bb6408" name="Changes" comment="Oprava ve třídách Main a BookingManager&#10;&#10;Smazala jsem zbytečný atribut booking ze třídy BookingManager.&#10;&#10;Opravila jsem názvy proměnných v metodě printGuestStatistics.&#10;&#10;Metoda getFirstHolidayBookings je obohacena o podmínku if, díky které teď zvládne reagovat na jakýkoliv počet rezervací.">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/BookingManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +87,22 @@
       <option name="project" value="LOCAL" />
       <updated>1697118513717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Oprava ve třídách Main a BookingManager&#10;&#10;Smazala jsem zbytečný atribut booking ze třídy BookingManager.&#10;&#10;Opravila jsem názvy proměnných v metodě printGuestStatistics.&#10;&#10;Metoda getFirstHolidayBookings je obohacena o podmínku if, díky které teď zvládne reagovat na jakýkoliv počet rezervací.">
+      <option name="closed" value="true" />
+      <created>1697119733858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697119733858</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Vypracován úkol třetí lekce&#10;&#10;Kód projektu hotel doplněn o úkoly třetí lekce, přidána nová třída BookingManager." />
     <MESSAGE value="Přidána metoda fillBookings&#10;&#10;Do třídy Main je nově vytvořena metoda fillBookings obsahující rezervace." />
     <MESSAGE value="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oprava metody getNumberOfWorkingBookings()&#10;&#10;Opravila jsem metodu getNumberOfWorkingBookings vložením cyklu." />
+    <MESSAGE value="Oprava ve třídách Main a BookingManager&#10;&#10;Smazala jsem zbytečný atribut booking ze třídy BookingManager.&#10;&#10;Opravila jsem názvy proměnných v metodě printGuestStatistics.&#10;&#10;Metoda getFirstHolidayBookings je obohacena o podmínku if, díky které teď zvládne reagovat na jakýkoliv počet rezervací." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oprava ve třídách Main a BookingManager&#10;&#10;Smazala jsem zbytečný atribut booking ze třídy BookingManager.&#10;&#10;Opravila jsem názvy proměnných v metodě printGuestStatistics.&#10;&#10;Metoda getFirstHolidayBookings je obohacena o podmínku if, díky které teď zvládne reagovat na jakýkoliv počet rezervací." />
   </component>
 </project>

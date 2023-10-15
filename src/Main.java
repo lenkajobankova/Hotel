@@ -11,6 +11,21 @@ public class Main {
         List<Booking> bookingList = new ArrayList<>();
         BookingManager bookingManager = new BookingManager(bookingList);
 
+        fillBookings(bookingManager);
+
+        printBookings(bookingList);
+
+        int numOfHolidyBookings = 8;
+        getFirstHolidayBookings(bookingList,numOfHolidyBookings);
+
+        System.out.println(bookingManager.getBooking(0).getBookingLength());
+
+        System.out.println(bookingManager.getBooking(0).getPrice());
+
+        printGuestStatistics(bookingList);
+    }
+
+    private static void fillBookings(BookingManager bookingManager) {
         Room room1 = new Room(1, 1,true,
                 true,1000);
         Room room2 = new Room(2, 1,true,
@@ -49,19 +64,7 @@ public class Main {
                 true);
 
         bookingManager.addBooking(reservation3);
-
-        printBookings(bookingList);
-
-        int numOfHolidyBookings = 8;
-        getFirstHolidayBookings(bookingList,numOfHolidyBookings);
-
-        System.out.println(bookingManager.getBooking(0).getBookingLength());
-
-        System.out.println(bookingManager.getBooking(0).getPrice());
-
-        printGuestStatistics(bookingList);
     }
-
 
 
     private static void printGuestStatistics(List<Booking> bookingList) {

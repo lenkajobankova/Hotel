@@ -38,10 +38,16 @@ public class BookingManager {
     }
     public double getAverageGuests(){
         int numOfGuests = 0;
+        double result;
         for (Booking booking : bookingList){
             numOfGuests += booking.getNumberOfBuests();
         }
-        return (double) numOfGuests/bookingList.size();
+        if(numOfGuests > 0){
+            result = (double) numOfGuests/bookingList.size();
+        } else {
+            result = 0;
+        }
+        return result;
     }
     //endregion
 }
